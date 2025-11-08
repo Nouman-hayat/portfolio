@@ -30,7 +30,15 @@
   <link href="assets/css/style.css" rel="stylesheet" />
 </head>
 
-<body>
+<body onload="pageloader()">
+
+ <div id="loader-wrapper">
+        <div class="loader-inner">
+            <img src="./assets/img/giphy.gif" alt="" />
+        </div>
+    </div>
+
+
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
@@ -378,6 +386,9 @@
         </div>
       </div>
     </section>
+
+
+   <div class="view-full-resume-wrapper"> <a href="https://drive.google.com/file/d/1PmjQcNY4IPMD95IQi4ZCJ237Z1nLNsrn/view?usp=sharing" target="_blank" class="view-full-resume">View Full Resume</a></div>
     <!-- End Resume Section -->
 
     <!-- ======= Portfolio Section ======= -->
@@ -1050,6 +1061,18 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+       function pageloader() {
+				var loader = document.getElementById("loader-wrapper");
+				setTimeout(displaydata, 7000);
+
+				function displaydata() {
+					loader.style.display = "none";
+				
+				}
+			}
+    </script>
 </body>
 
 </html>
