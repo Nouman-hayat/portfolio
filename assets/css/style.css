@@ -992,6 +992,7 @@ section {
 .view-full-resume-wrapper{
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
 }
 .view-full-resume {
   background: #FF4A57;
